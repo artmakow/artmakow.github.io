@@ -1,0 +1,58 @@
+﻿#mail {
+		width: 28px; height: 20px;
+		display: inline-block;
+		background: url(../img/mail.png) no-repeat;
+		margin: 0 10px 3px 0;
+		}
+
+.open-popup {
+		/*background: #000;*/
+		display: inline-block;
+		margin: 0 0 50px 0;
+		cursor: pointer;
+		color: #dd5555;
+		font-size: 38px;
+		transition: all 0.3s ease-out;
+		}
+
+.open-popup:hover {
+		color: #000;
+		transition: all 0.3s ease-out;
+		}
+
+.popup {
+		width: 50%; height: 50%;
+		background: #fff;
+		position: fixed;
+		z-index: 10000;
+		}
+
+.popup-content {
+		border-radius: 6px;
+		line-height: 1.6;
+		padding: 14px 18px 0 17px;
+		}
+
+.btn-close {
+		background: url(../img/close.png) 0 0 no-repeat;
+		width: 30px; height: 30px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		}
+
+.btn-close:hover {
+		cursor: pointer;
+		background: url(../img/close.png) 0 -30px no-repeat;
+		}
+
+.hide-layout {
+		background: #000;
+		bottom: 0;
+		display: none;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 998;
+		}
