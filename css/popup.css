@@ -56,3 +56,45 @@
 		width: 100%;
 		z-index: 998;
 		}
+		
+.contacts {
+		width: 100%;
+		/*background: #ccc;*/
+		margin: 10px 0 0 0;
+		display: inline-block;
+		}
+
+#email, #vk, #telegram {
+		height: 60px; width: 60px;
+		display: inline-block;
+		float: left;
+		}	
+		
+#email {
+		background: url(../img/icon.png) 0 0 no-repeat;
+		}
+
+#vk {
+		background: url(../img/icon.png) -60px 0 no-repeat;
+		}
+
+#telegram {
+		background: url(../img/icon.png) -120px 0 no-repeat;
+		}		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
