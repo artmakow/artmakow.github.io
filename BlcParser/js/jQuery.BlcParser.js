@@ -18,7 +18,7 @@ Site    :  artmakow.pro
 			color						: 	'#fff',
 			fontsize 				: 	'16px',
 			fontfamily			: 	'Fira Code',
-			ajaxurl					: 	'cb.xml'
+			ajaxurl					: 	'http://artmakow.pro/cb/cb.xml'
 		}, options);
 
 		//Глобальные переменные
