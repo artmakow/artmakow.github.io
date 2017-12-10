@@ -1,0 +1,98 @@
+@import url('fonts/fira_code.css');
+@import url('reset.css');
+@import url('text.css');
+
+html, body {
+		min-width: 460px;
+		height: 100%;
+		background: #14161a;
+		}
+
+.wrapper {
+		width: 1180px;
+		margin: 0 auto;
+		/*background: red;*/
+		}
+
+.screen {
+		width: 100%;
+		padding: 120px 0 120px 0;
+		background: #5877b5;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+
+.content-gd {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 340px;
+		grid-gap: 0;
+		margin: 0 auto;
+		/*background: red;*/
+		}
+
+.gd {
+		/*background: green;*/
+		}
+
+.content img {
+		max-width: 100%;
+		margin: 20px 0 0 0;
+		}
+
+.content {
+		width: 100%;
+		/*background: green;*/
+		margin: 0 auto;
+		}
+
+
+.download {
+		width: 100%;
+		margin: 40px 0 0 0;
+		}
+
+a.btn-download {
+		display: table;
+		padding: 20px 60px 20px 60px;
+		border-radius: 100px;
+		/*background: #fff;*/
+		margin: 0 auto;
+		font-size: 22px;
+		font-family: 'Fira Code';
+		font-weight: 400;
+		color: #fff;
+		transition: all 0.2s;
+		border: solid 2px #fff;
+		}
+
+a.btn-download:hover {
+		opacity: 0.5;
+		}
+
+footer {
+		width: 100%;
+		height: 120px;
+		background: #14161a;
+		}
+
+@media screen and (max-width: 1200px) {
+		#currency-parser {
+		width: 340px !important;
+		}
+		.content-gd {
+		grid-template-columns: 1fr;
+		width: 90%;
+		}
+		.wrapper {
+		width: 100%;
+		}
+		.content {
+		width: 90%;
+		}
+		.wrapper h1,
+		.wrapper h2 {
+			text-align: center;
+		}
+}

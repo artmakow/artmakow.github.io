@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery BlcParser</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jQuery.BlcParser.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/jQuery.BlcParser.min.js"></script>
+</head>
+<body>
+
+<div class="screen">
+  <div class="wrapper">
+    <div class="content-gd">
+
+      <div class="gd">
+        <h1>jQuery<br />BlcParser</h1>
+        <h2>Актуальные курсы валют <br /> из ЦБ РФ у вас на сайте</h2>
+      </div>
+
+      <div class="gd">
+
+        <!-- BlcParser -->
+        <div id="currency-parser"></div>
+        <!-- BlcParser -->
+
+        <div class="download">
+        <a class="btn-download" href="https://github.com/artmakow/BlcParser/archive/master.zip">Скачать</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="content">
+
+  <h3>Что это?</h3>
+    <p>
+    Виджет-информер текущих курсов валют.
+    </p>
+
+  <h3>На чем сделан виджет?</h3>
+    <p>
+    Данный виджет-информер написан на JavaScript, jQuery, PHP
+    </p>
+
+  <h3>Как это работает?</h3>
+    <p>
+    Виджет парсит xml-файл от Центробанка РФ с текущими курсами. <br />
+    Схема работы: PHP-скрипт скачивает раз в сутки к вам на сервер / хостинг xml-файл. <br />
+    Далее, JS-ом из xml вытаскиваются текущий курс и выводится в браузере.
+    </p>
+
+  <h3>Установка</h3>
+    <p>
+    1. Распаковываем архив себе на сервер / хостинг <br />
+    (обязательно на сервере должен работать PHP)
+    </p>
+
+    <p>
+    2. Запускаем файл 'cb.php' (открыть в браузере) <br />
+    Запустить надо будет 1н раз, далее скрипт будет самостоятельно <br />
+    раз в сутки обновлять XML-файл из ЦБ.
+    </p>
+
+    <p>
+    3. Между тегами 'head' подключаем основные файлы.
+    </p>
+    <img src="img/1.png" alt="">
+
+    <p>
+    4. Вставляем виджет в любое удобное место. <br />
+    </p>
+    <img src="img/2.png" alt="">
+
+    <p>
+    5. Внизу, до закрывающего тега /body вызываем наш виджет. <br />
+    </p>
+    <img src="img/3.png" alt="">
+
+  <h3>Настройка</h3>
+    <p>
+    <span>money:</span> - отображаемые валюты <br />
+    <span>time:</span> - выводит дату, true -  показывать, false - нет <br />
+    <span>roundedNumber:</span> - округление валют после точки, true - округлить, false - нет <br />
+    <span>background:</span> - цвет окна виджета <br />
+    <span>color:</span> - цвет текста <br />
+    <span>fontsize:</span> - размер текста <br />
+    <span>fontfamily:</span> - шрифт текста <br />
+    <span>ajaxurl:</span> - путь до xml.файла
+    </p>
+
+  <h3>Доступные валюты</h3>
+    <p>
+    aud Австр-ий доллар <br />
+    azn Азерба-ий манат <br />
+    gbr Анг-кий Фунт <br />
+    amd Армянских драмов <br />
+    byn Белору-ий рубль <br />
+    bgn Болгарский лев <br />
+    brl Бразильский реал <br />
+    huf Венг-ких форинтов <br />
+    hkd Гон-ских долларов <br />
+    dkk Датских крон <br />
+    usd Доллар США <br />
+    eur Евро <br />
+    inr Индийских рупий <br />
+    kzt Казах-ских тенге <br />
+    cad Канадский доллар <br />
+    kgs Киргизских сомов <br />
+    cny Китайских юаней <br />
+    mdl Молдавских леев <br />
+    nok Норвежских крон <br />
+    pnl Польский злотый <br />
+    ron Румынский лей <br />
+    xdr СДР <br />
+    sgd Синга-кий доллар <br />
+    tjs Тад-ких сомони <br />
+    try Турецкая лира <br />
+    tmt Туркм-кий манат <br />
+    uzs Узбекских сумов <br />
+    uah Укр-ких гривен <br />
+    czk Чешских кро <br />
+    sek Шведских крон <br />
+    chf Швейц-кий франк <br />
+    zar Южноаф-х рэндов <br />
+    krw Вон Корея <br />
+    jpy Японских иен
+    </p>
+
+  <h3>Модернезация</h3>
+    <p>
+    Внимание! Любые изменения в коде вы делаете на свой страх и риск. <br />
+    Если вы не уверены в своих знаниях, лучше остановитесь сейчас. <br />
+    Далее... Редактируем 'jQuery.BlcParser.js' и 'jQuery.BlcParser.css'
+    </p>
+
+  </div>
+</div>
+
+<footer></footer>
+
+<script>
+$('#currency-parser').BlcParser({
+  money: 'usd, eur, uah, jpy, cny, chf, inr',
+  background: '#14161a',
+  time: true
+});
+</script>
+
+</body>
+</html>
