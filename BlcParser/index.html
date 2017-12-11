@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8" />
   <title>jQuery BlcParser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Данный виджет-информер написан на JavaScript, jQuery, PHP. Виджет парсит xml-файл от Центробанка РФ с текущими курсами валют."/>
+  <meta name="keywords" content="Виджет, информер, курс валют, валюты, JavaScript, jQuery, PHP" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/jQuery.BlcParser.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/modernizr.js"></script>
-  <script src="js/jQuery.BlcParser.js"></script>
+  <script src="js/jQuery.BlcParser.min.js"></script>
 </head>
 <body>
 
@@ -50,7 +53,7 @@
 
   <h3>Как это работает?</h3>
     <p>
-    Виджет парсит xml-файл от Центробанка РФ с текущими курсами. <br />
+    Виджет парсит xml-файл от Центробанка РФ с текущими курсами валют. <br />
     Схема работы: PHP-скрипт скачивает раз в сутки к вам на сервер / хостинг xml-файл. <br />
     Далее, JS-ом из xml вытаскиваются текущий курс и выводится в браузере.
     </p>
